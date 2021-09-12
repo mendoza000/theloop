@@ -45,7 +45,7 @@ body, html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 .header_title{
   font-family: var(--font-title);
@@ -86,8 +86,7 @@ body, html{
   border-radius: 61% 39% 39% 61% / 28% 41% 59% 72% ;
   height: 12em;
   width: 12em;
-  background: rgb(255,140,237);
-  background: linear-gradient(320deg, rgba(255,140,237,1) 33%, rgba(67,91,153,1) 100%);
+  background: linear-gradient(320deg, var(--color-secondary) 33%, var(--color-primary-l) 100%);
   /*position: absolute;
   left: -2em;
   top: -2em;*/
@@ -100,4 +99,74 @@ body, html{
 
 .header_by{
   margin-top: 1.3em;
+}
+
+.redes_container{
+  width: 100vw;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes{
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  justify-content: flex-start;
+
+}
+.redes:last-child{
+  margin-left: auto;
+  margin-right: 0;
+  justify-content: flex-end;
+}
+.redes_red{
+  color: var(--color-secondary-xl);
+  text-decoration: none;
+  font-size: 1.9em;
+  margin: 0.3em 0.2em;
+}
+.redes_frase{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  margin: 0 0.5em;
+}
+
+.nav{
+  background-color: var(--color-primary-o);
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+.nav_list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  height: 3em;
+}
+.list_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list_item a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 0.5em;
+  font-size: 1.6em;
+  transition: background-color 0.5s;
+  width: 100%;
+}
+.list_item a:hover{
+  background-color: var(--color-primary);
+}
+.list_item a i{
+  color: var(--color-secondary);
 }
