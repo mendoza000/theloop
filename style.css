@@ -1,0 +1,103 @@
+:root{
+  --color-primary-xo: #0c193b;
+  --color-primary-o: #12224a;
+  --color-primary: #1E3163;
+  --color-primary-l: #2d437a;
+  --color-primary-xl: #435b99;
+
+  --color-secondary-xl: #ff8ced;
+  --color-secondary-l: #ff7aea;
+  --color-secondary: #ff67e7;
+  --color-secondary-o: #db4bc4;
+  --color-secondary-xo: #c73ab1;
+
+  --color-text: #fff5fd;
+  --font-title: 'Alumni Sans', sans-serif;
+  --font-text: 'Glory', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  font-family: var(--font-text);
+  background-color: var(--color-primary-xo);
+  color: var(--color-text);
+}
+
+#app{
+}
+.effect{
+  box-shadow: 
+  1px 1px var(--color-secondary-o),
+  2px 2px var(--color-secondary-o), 
+  3px 3px var(--color-secondary-o), 
+  4px 4px var(--color-secondary-o), 
+  5px 5px var(--color-secondary-o), 
+  6px 6px var(--color-secondary-o), 
+  7px 7px var(--color-secondary-o),
+  8px 8px var(--color-secondary-o);
+  transform: translateX(-8px) translateY(8px);
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+.header_title{
+  font-family: var(--font-title);
+  font-weight: bold;
+  font-size: 3.3em;
+  text-align: center;
+  background-color: var(--color-primary);
+  padding: 0 0.3em;
+  margin-top: 0.3em;
+}
+
+@keyframes cambiarDimensionCircle {
+
+  0%{
+    border-radius: 61% 39% 39% 61% / 28% 41% 59% 72% ;
+  }
+
+  25%{
+    border-radius: 61% 39% 52% 48% / 67% 41% 59% 33% ;
+  }
+
+  50%{
+    border-radius: 61% 39% 17% 83% / 67% 31% 69% 33% ;
+  }
+
+  75%{
+    border-radius: 29% 71% 17% 83% / 79% 31% 69% 21% ;
+  }
+
+  100%{
+    border-radius: 55% 45% 53% 47% / 45% 51% 49% 55% ;
+  }
+
+
+}
+
+.header_circle{
+  border-radius: 61% 39% 39% 61% / 28% 41% 59% 72% ;
+  height: 12em;
+  width: 12em;
+  background: rgb(255,140,237);
+  background: linear-gradient(320deg, rgba(255,140,237,1) 33%, rgba(67,91,153,1) 100%);
+  /*position: absolute;
+  left: -2em;
+  top: -2em;*/
+  animation-name: cambiarDimensionCircle;
+  animation-duration: 7s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.header_by{
+  margin-top: 1.3em;
+}
