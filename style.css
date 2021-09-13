@@ -24,6 +24,7 @@ body, html{
   font-family: var(--font-text);
   background-color: var(--color-primary-xo);
   color: var(--color-text);
+  overflow-x: hidden;
 }
 
 #app{
@@ -39,6 +40,9 @@ body, html{
   7px 7px var(--color-secondary-o),
   8px 8px var(--color-secondary-o);
   transform: translateX(-8px) translateY(8px);
+}
+.btn_nav_active{
+  background-color: var(--color-primary);
 }
 .header{
   display: flex;
@@ -68,7 +72,7 @@ body, html{
   }
 
   50%{
-    border-radius: 61% 39% 17% 83% / 67% 31% 69% 33% ;
+    border-radius: 20% 80% 24% 76% / 28% 67% 33% 72% 
   }
 
   75%{
@@ -153,6 +157,7 @@ body, html{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .list_item a{
   text-decoration: none;
@@ -169,4 +174,50 @@ body, html{
 }
 .list_item a i{
   color: var(--color-secondary);
+}
+
+/*about me*/
+
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2em;
+}
+
+.aboutme p{
+  text-align: center;
+}
+
+.aboutme_title{
+  background-color: var(--color-primary);
+  margin-bottom: 1em;
+  padding: 0.3em 0.7em;
+  font-size: 2em;
+}
+.skills{
+  margin-top: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skills_title{
+  margin-top: 1em;
+  font-size: 1.3em;
+  margin-right: auto;
+  border-bottom: 2px solid var(--color-secondary);
+  padding: 0 0.3em;
+}
+.skills i{
+  font-size: 1.8em;
+  color: var(--color-secondary-l);
+  margin: 0 0.2em;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  padding: 0.1em 0.1em;
 }

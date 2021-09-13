@@ -2,7 +2,7 @@ const app = document.querySelector('#app');
 export const writeHeaderHome = () => {
 
 	const headerHtml = `
-	<header class="header">
+	<header class="header animate__animated animate__fadeInLeft">
         <div class="header_circle">
         </div>
         <h1 class="header_title effect">The loop</h1>

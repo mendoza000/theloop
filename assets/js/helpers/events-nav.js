@@ -1,4 +1,5 @@
 import {writeHomePage} from '../home-page'
+import {writeAboutPage} from '../about-page'
 import { writeNav } from './write-nav'
 
 export const eventsNav = () =>{
@@ -9,20 +10,17 @@ export const eventsNav = () =>{
 	const app = document.querySelector('#app');
 
 	btnHome.addEventListener('click', (e) => {
-		
 		writeHomePage()
-
 	});
 
 	btnArticle.addEventListener('click', (e) => {
 		
-		app.innerHTML = '<h1>Articulos</h1>'
+		app.innerHTML = '<h1 class="animate__animated animate__fadeInRight">About me</h1>'
 		writeNav()
 
 	});
 
 	btnAbout.addEventListener('click', () => {
-		app.innerHTML = '<h1>About me</h1>'
-		writeNav()
+		writeAboutPage()		
 	})
 }
