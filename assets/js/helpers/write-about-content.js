@@ -19,6 +19,6 @@ export const writeAboutContent = () => {
 
 	`
 
-	app.innerHTML = html
+	app.innerHTML += html
 
 }

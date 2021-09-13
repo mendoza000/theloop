@@ -1,5 +1,6 @@
 import {writeHomePage} from '../home-page'
 import {writeAboutPage} from '../about-page'
+import {writeArticlesPage} from '../articles-page'
 import { writeNav } from './write-nav'
 
 export const eventsNav = () =>{
@@ -15,8 +16,7 @@ export const eventsNav = () =>{
 
 	btnArticle.addEventListener('click', (e) => {
 		
-		app.innerHTML = '<h1 class="animate__animated animate__fadeInRight">About me</h1>'
-		writeNav()
+		writeArticlesPage()
 
 	});
 

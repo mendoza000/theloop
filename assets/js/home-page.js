@@ -6,9 +6,8 @@ const app = document.querySelector('#app');
 
 /* Funcion principal para escribir el home */
 export const writeHomePage = () => {
-	app.innerHTML = ""
 	/* pintamos la nav*/
-	writeNav()
+	writeNav("home")
 	/*pintamos el header*/
 	writeHeaderHome()
 
