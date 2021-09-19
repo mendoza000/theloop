@@ -71,7 +71,9 @@ const writeArticlesCards = async () => {
   const {articles} = await resp.json()
   const articlesContainer = document.querySelector('.articles_list');
 
-  articles.forEach(elem => {
+  const firstRecentArticle = articles.reverse()
+
+  firstRecentArticle.forEach(elem => {
 
     const card = `
 

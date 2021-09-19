@@ -210,6 +210,7 @@ body::-webkit-scrollbar-thumb,
 
 .aboutme p{
   text-align: center;
+  max-width: 24em;
 }
 
 .aboutme_title{
@@ -337,6 +338,8 @@ body::-webkit-scrollbar-thumb,
   margin: 0 0.7em;
   margin-bottom: 0.6em;
   padding: 0.3em 0.3em;
+  text-align: center;
+  display: inline-block;
 }
 
 .articleOpen_header{
@@ -346,7 +349,7 @@ body::-webkit-scrollbar-thumb,
 
 .articleOpen_header p{
   margin-top: 0.5em;
-  text-align: center;
+  margin-left: 2em;
 }
 
 .articleOpen_redes{
@@ -364,6 +367,7 @@ body::-webkit-scrollbar-thumb,
 }
 .articleOpen_text{
   margin: 1em;
+  line-height: 1.4em;
 }
 #closeArticle{
   position: absolute;
@@ -383,4 +387,150 @@ body::-webkit-scrollbar-thumb,
 }
 #closeArticle:focus{
   background-color: var(--color-primary);
+}
+
+@media screen and (min-width: 425px){
+
+  .redes_container{
+    justify-content: space-around;
+  }
+  .redes_frase{
+    max-width: 15em;
+  }
+  .redes{
+    margin: initial;
+  }
+  .redes:last-child{
+    margin: initial;
+  }
+
+  .articles_list_title{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .skills_title{
+    margin-left: 1em;
+  }
+  .skills{
+    margin-left: 1em;
+  }
+  
+}
+
+@media screen and (min-width: 670px ){
+
+  .articles_list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+  }
+
+  .articleOpen_redes{
+    margin-top: -2em;
+  }
+
+  .articleOpen_text{
+    margin: 2em;
+  }
+
+  .skills i{
+    font-size: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+  }
+
+
+}
+
+@media screen and (min-width: 768px){
+
+  .nav{
+    height: 100vh;
+    width: 3.8em;
+  }
+  .nav_list{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .redes{
+    margin-left: 1em;
+  }
+  .redes:last-child{
+    margin-left: 0px;
+    margin-right: 1em;
+  }
+
+  .header{
+    justify-content: center;
+    align-items: center;
+  }
+  .skills_title{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutme{
+    margin-left: 3.5em;
+    margin-top: 5em;
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+
+  .header{
+    margin-top: 2em;
+  }
+  .articleOpen_text{
+    margin: 2em;
+  }
+
+  .articleOpen_text{
+    margin: 2em 3em;
+    font-size: 1.14em;
+  }
+
+  .articles_list{
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 3em;
+    margin-right: auto;
+  }
+
+  .aboutme{
+    margin-left: 5em;
+    margin-top: 7em;
+  }
+
+}
+
+@media screen and (min-width: 1330px){
+
+  .header{
+    margin-top: 5em;
+  }
+
+  .articles_list{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 1440px){
+
+  .header{
+    margin-top: 8em;
+  }
+
+  .articleOpen_text{
+    margin: 3em 4em;
+  }
+  .articles_list{
+    grid-template-columns: repeat(5, 1fr);
+  }
+
 }
