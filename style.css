@@ -30,6 +30,22 @@ body, html{
 #app{
   margin-bottom: 5em;
 }
+body::-webkit-scrollbar,
+.articleOpen::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track,
+.articleOpen::-webkit-track {
+  background: var(--color-primary-xo);
+}
+
+body::-webkit-scrollbar-thumb,
+.articleOpen::-webkit-thumb {
+  background-color: #000;
+  border-radius: 20px;
+}
+
 .effect{
   box-shadow: 
   1px 1px var(--color-secondary-o),
@@ -305,11 +321,11 @@ body, html{
 .articleOpen{
   height: 100vh;
   width: 100vw;
-  position: fixed;
+  position: absolute;
   background: var(--color-primary-o);
   z-index: 50;
   top: 0;
-  left: -100%;
+  left: -120%;
   overflow-y: scroll;
   transition: left 0.2s;
 }
