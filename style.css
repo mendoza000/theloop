@@ -310,7 +310,7 @@ body::-webkit-scrollbar-thumb,
   /*background: linear-gradient(0deg, var(--color-secondary-xo) 33%, var(--color-primary-xl) 100%);
 */
   /* Degreadado con secundario */
-  background: linear-gradient(0deg, var(--color-secondary-xo) 33%, var(--color-secondary-xl) 100%);
+  /*background: linear-gradient(0deg, var(--color-secondary-xo) 33%, var(--color-secondary-xl) 100%);*/
 
 }
 
@@ -326,6 +326,7 @@ body::-webkit-scrollbar-thumb,
   z-index: 50;
   top: 0;
   left: -120%;
+  overflow-y: scroll;
   transition: left 0.2s;
 }
 
