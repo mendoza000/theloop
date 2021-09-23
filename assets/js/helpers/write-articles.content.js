@@ -77,7 +77,7 @@ const writeArticlesCards = async () => {
 
     const card = `
 
-      <div class="article" id=${elem._id}>
+      <div class="article animate__animated animate__fadeInLeft" id=${elem._id}>
         <div class="article_color"></div>
         <span class="article_title">
           ${elem.title}
@@ -103,12 +103,14 @@ const articleEvent = async () => {
 
   articlesContainer.addEventListener('click', async (e) => {
 
-    let id = e.target.parentElement.id
+    const target = e.target
+    if (!target.classList.contains('article') && !target.parentElement.classList.contains('article')) return
 
-    if (!id) return;
+    if (!target.id && !target.parentElement.id) return;
 
-
-    console.log(id);
+    const id = (target.id)
+      ? target.id
+      : target.parentElement.id
 
     const url = "https://theloopback.herokuapp.com"
 

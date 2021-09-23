@@ -290,6 +290,7 @@ body::-webkit-scrollbar-thumb,
 -webkit-box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.8);
 -moz-box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.8);
   cursor: pointer;
+  min-width: 17em;
 }
 .article_title{
   font-weight: bold;
